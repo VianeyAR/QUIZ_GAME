@@ -1,0 +1,76 @@
+body{
+
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #16cab2;
+    --blues: #0c1adb;
+    --pink: #d3319d;
+    --pinks: #fa08a9;
+    --yellow: #fdef25;
+    --green: #0ceb17;
+    --greens: #59ec4b;
+    --red: #d11717;
+    --aqua: #7FFF00;
+    --reds: #cc4660;
+    --plum: #b811b8;
+    --text-input-field: #f7f7f7;
+    --dark: #232830;
+    --hospital-green: #acd9b2;
+  }
+  
+.menuc{
+    background-color: var(--yellow);
+    border-radius: 8px;
+    border: 2px solid var(--yellow);
+    color: var(--pinks);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 40px;
+    margin-bottom: 20px;
+    
+
+}
+
+.bi-plus-square-dotted{
+    background-color: var(--aqua);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            width: 50px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
+}
+
+.bi-trash{
+    background-color: var(--reds);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            width: 50px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
+}
+.bi{
+    margin: 10px;
+}
+
+.btn-warning{
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 50px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.btn{
+margin: 15px;
+}
