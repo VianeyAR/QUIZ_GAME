@@ -87,7 +87,7 @@ function CapturarPregunta({ listar, listarPreguntas, setListarPreguntas }) {
     localStorage.setItem("listarPreguntas", JSON.stringify(NuevaLista));
     setListarPreguntas(NuevaLista);
   };
-  const asignarrespuesta = () => {
+  const asignarrespuesta = async () => {
     const checarrespuesta = document.getElementById(`${numeropregunta}`);
     //console.log(checarrespuesta);
     var seleccionaropcion =
@@ -97,9 +97,16 @@ function CapturarPregunta({ listar, listarPreguntas, setListarPreguntas }) {
     const NuevaLista = listarPreguntas.map((item) => {
       if (item.id === id) {
         item.respuesta = seleccionaropcion;
+        const resultado = Swal.fire({
+          title: "¡FELICIDADES!",
+          text: "¡Se ha guardado la respuesta!",
+          icon: "success",
+          confirmButtonText: "Salir",
+        });
         
       }
       return item;
+      
     });
     localStorage.setItem("listarPreguntas", JSON.stringify(NuevaLista));
     setListarPreguntas(NuevaLista);
@@ -194,6 +201,7 @@ function CapturarPregunta({ listar, listarPreguntas, setListarPreguntas }) {
         >
         </button>
 
+        <div id="liveAlertPlaceholder"></div>
         <button 
           onClick={asignarrespuesta}
           type="button"
@@ -202,6 +210,7 @@ function CapturarPregunta({ listar, listarPreguntas, setListarPreguntas }) {
         >
         </button>
       </div>
+      
     </div>
   );
 }

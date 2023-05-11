@@ -42,7 +42,7 @@ const Juego = () => {
       numeropregunta++;
     }
     Swal.fire({
-      title: "En hora buena!",
+      title: "¡En hora buena!",
       text: `Correct: ${correcto.length}/${numeropregunta}`,
       icon: "success",
     });
